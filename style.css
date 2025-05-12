@@ -1,0 +1,188 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 280px;
+    background-color: #9b59b6; /* Lighter purple */
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .profile-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 8px 0;
+    font-weight: 500;
+  }
+  
+  .sidebar-nav a:hover {
+    text-decoration: none;
+    background-color: #b085d6; /* Even lighter purple */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 25px;
+  }
+  
+  .sidebar-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ffffff33;
+    padding-bottom: 5px;
+  }
+  
+  .sidebar-section ul {
+    padding-left: 20px;
+  }
+
+  /* Ensure LinkedIn link text is displayed in white */
+  .sidebar-section a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .sidebar-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff; /* White */
+    color: #333333; /* Darker text for contrast */
+  }
+  
+  section {
+    margin-bottom: 60px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #b085d6; /* Lighter purple */
+    border-bottom: 2px solid #b085d6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .job h3 {
+    margin: 10px 0 5px;
+    color: #007acc;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  }
+ /* Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #187BCD; /* Light Blue */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #145A8A; /* Slightly darker blue for hover */
+  }
+  
+  /* Light Theme */
+  body.light-mode {
+    background-color: #fff;
+    color: #111;
+  }
+  
+  body.light-mode .sidebar {
+    background-color: #f5f5f5;
+    color: #111;
+  }
+  
+  body.light-mode .sidebar-nav a {
+    color: #111;
+  }
+  
+  body.light-mode .sidebar-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  body.light-mode h2 {
+    color: #007acc;
+    border-color: #007acc;
+  }
+  
+  body.light-mode .job h3 {
+    color: #005fa3;
+  }
+  
+  /* Skill Progress Bars */
+  .skill-bar {
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar-fill {
+    height: 20px;
+    background-color: #6a0dad;
+    width: 0;
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  /* Ensure 'AANVI SHARMA' is displayed in white color */
+  .sidebar-header h1 {
+    color: white;
+  }
